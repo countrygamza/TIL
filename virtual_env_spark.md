@@ -1,10 +1,19 @@
 # Spark(스파크)
 
-### Spark란?
+### Hadoop / Spark란?
 
 `Hadoop(하둡)`: 대용량 데이터를 분산처리할</u> 수 있는 자바 기반의 오픈소스 프레임워크. 분산처리기술인 MapReduce와 분산저장기술인 HDFS를 사용. 분산 컴퓨팅 방식으로 구축 비용이 저렴하고 비용 대비 데이터 처리가 굉장히 빠르다.
 
+- 하둡의 저장 시스템은 보통 행 단위로 데이터를 분산저장하는데, parquet는 열 단위로 저장된 데이터들이다.
+- 하둡은 데이터를 디스크에서 가져와서 사용한다.
+
 `Spark(스파크)`: 빅데이터를 분산처리하는 오픈소스 프레임워크. 기존의 하둡은 데이터를 끌어올 때 시간 소요가 커서 실시간으로 분석하기가 어렵다는 단점이 있다. 스파크는 하둡에 비해 데이터 처리속도가 월등히 빠르나 분산저장기술(HDFS)이 없어 하둡과 함께 사용. e.g.스트리밍 서비스
+
+- 스파크는 디스크 상에서 읽고 쓰는 것을 방지하기 위해 데이터를 메모리로 가져와서 사용한다. 그래서 메모리를 많이 잡아먹는다.
+- features: 벡터 / label: double형, 수치 (e.g. 1->1.0, 2->2.0)
+- SparkContext: 한 애플리케이션이 스파크에 연동되려면 우선 프로그램 내에서 관련 스파크 패키지들을 import하고 SparkContext 객체를 생성해야 한다.
+
+
 
  -> download -> archive release -> 2.4.4 ver download
 
@@ -80,10 +89,30 @@ Anaconda로 가상환경 만들기
 
 
 
-*참고사이트:
+### FileZilla로 AWS서버에 데이터 전송하기
 
-https://spark.apache.org/ 
+FileZilla는 오픈소스이며, FTP, SFTP, FTPS를 지원하는 FTP 관리 소프트웨어이다.  즉, TCP/IP 상의 컴퓨터들끼리 파일을 주고받을 때 쓰는 파일 전송 프로토콜이다.
 
-https://3months.tistory.com/511
+[설정]
 
-https://12bme.tistory.com/434
+```
+프로토콜: SFTP
+호스트: AWS서버 IP
+로그온유형: 키 파일
+사용자: lab18
+키 파일: aws_azure\ml-multi-a.ppk
+```
+
+
+
+
+
+*참고사이트
+
+아파치스파크 공식: https://spark.apache.org/ 
+
+하둡과 맵리듀스 스파크의 관계: https://3months.tistory.com/511
+
+RDD: https://12bme.tistory.com/434
+
+In-memory computing: https://blog.lgcns.com/176
