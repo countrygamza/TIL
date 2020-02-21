@@ -26,6 +26,32 @@ eXtensible Markup Language(확장될 수 있는 표시언어)로, 마크업 언�
 
 
 
+### AJAX
+
+JavaScript의 라이브러리 중 하나로, Asynchronous Javascript And XMl(비동기식 자바스크립트와 xml)의 약자. 브라우저가 갖고 있는 XMLHttpRequest 객체를 이용해서 전체 페이지를 새로 고치지 않고도 페이지의 일부만을 위한 데이터를 로드하는 기법. 즉, JavaScript를 사용한 비동기 통신, 클라이언트와 서버 간 XML 데이터를 주고받는 기술.
+
+![ajax](https://user-images.githubusercontent.com/51535130/75011113-28049900-54c2-11ea-98b0-35e18f9e8d4a.png)
+
+[AJAX의 특징]
+
+- XML을 통해 데이터 주고 받는다.
+- 비동기식 통신: 요청 결과가 아직 오지 않더라도 다음 코드를 수행. 명령을 정의만 해놓고 다음 코드로 간 뒤, 응답이 오면 실행하는 call back 함수. 병렬 구조로 밑으로 내려가며, 명령어 순서대로 수행되지 않을 수 있다.
+  - e.g. 인스타그램: 화면의 UI를 유지하면서 데이터는 계속 갖고 온다.
+- 장점: 화면전환이 빠르다.
+- 단점: 보안에 굉장히 취약하다.
+
+
+
+### 웹 렌더링
+
+```python
+# Anaconda prompt에서 http 규격에 맞춰서 요청
+>> python -m.http.server --cgi8000 # 포트번호 8000. 0~1024는 피하기.
+   # cgi-bin 폴더에는 .py만 들어가야 하므로, 순수 html 파일일 경우 base 폴더에 넣는다.
+
+# 로컬: http://127.0.0.1.8000/파일이름.html
+```
+
 
 
 참고사이트

@@ -10,9 +10,9 @@
 
 ![html](https://user-images.githubusercontent.com/51535130/74013098-0dfd8d80-49cf-11ea-8aaa-e7dd3e0c9bcb.png)
 
+![html](https://user-images.githubusercontent.com/51535130/75013628-fe4e7080-54c7-11ea-8153-256139be5b63.png)
 
-
-### 사용
+### 태그 사용
 
 html5부터는 임의로 사용자가 하이픈(-)을 넣어 attribute를 만들 수 있다.
 
@@ -24,6 +24,8 @@ html5부터는 임의로 사용자가 하이픈(-)을 넣어 attribute를 만들
   - e.g. [Hi, hello                                            ]
 - `<span></span>`: 줄바꿈 없이 특정역역 안에서 지정
   - e.g. [Hi, hello]
+- submit: 폼 태그를 전체로
+- form tag: 사용자와의 상호작용. 의사정보 얻어내기 위한 용도 e.g. 아이디 적는 란
 - data-role="listview" 균등하게 영역 맞춰줌
 - data-inset="True" : 모서리 약간 둥글게
 
@@ -39,7 +41,7 @@ $('#txt') : txt라는 id를 가진 객체를 불러와서 jquery객체로 바꿔
 
 ### Jquery
 
-자바스크립트 라이브러리(jquery.com). version 맞추는 것 중요.
+자바스크립트 라이브러리(jquery.com)로 자바스크립트 객체를 포장하여 더 화려하게 만들어준다. version 맞추는 것 중요.
 
 - jquery-ui: 기본적인 jquery 기능 활용해서 ui기능 확장해서 만든 것
 - jquery-mobile; mobile에서 많이쓰는 것들 모음
