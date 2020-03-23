@@ -6,7 +6,7 @@ int a, b, c;  // 정수를 저장하는 변수 선언
 int product(int x, int y);   // 사용자 함수 원형
 
 /* main() 함수 */
-void main() {
+int main() {
 	/* 첫번째 수를 입력*/
 	printf("Enter a number between 1 and 100 : ");
 	scanf("%d", &a);
